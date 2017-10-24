@@ -166,6 +166,8 @@ public class VisibleDelegate {
             }
         }
 
+        if (!mFragment.isAdded()) return;
+
         if (visible) {
             mSupportF.onSupportVisible();
 
